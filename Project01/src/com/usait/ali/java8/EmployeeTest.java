@@ -61,9 +61,7 @@ public class EmployeeTest {
 	Map<String, Double> employeeCountByDepartmentsalry=
 			employeeList.stream().distinct().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
 	System.out.println("The employee count Dept wise salary"+employeeCountByDepartmentsalry);
-	
-	
-	
+
 	
 	 
 		
