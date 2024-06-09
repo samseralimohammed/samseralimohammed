@@ -43,7 +43,6 @@ public class EmployeeTest {
 	
 	Map<String,Double>avgAgeOfMaleAndFemaleEmployees = employeeList.stream().
 			collect(Collectors.groupingBy(Employee:: getGender, Collectors.averagingInt(Employee::getAge)));
-	
 	System.out.println("The average age of Male and Female employees age: "+ avgAgeOfMaleAndFemaleEmployees);
 	
 	
@@ -51,17 +50,22 @@ public class EmployeeTest {
 	System.out.println("The max salary is"+ maxsalaryWrapper);
 	
 	
-			 
+	employeeList.stream().filter(e->e.yearOfJoining>2015).
+	map(Employee::getName).distinct().forEach(System.out::println);
+	
+	Map<String, Long> employeeCountByDepartment=
+			employeeList.stream().distinct().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
+	System.out.println("The employee count Deptwise "+employeeCountByDepartment);
+	
+	
+	Map<String, Double> employeeCountByDepartmentsalry=
+			employeeList.stream().distinct().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
+	System.out.println("The employee count Dept wise salary"+employeeCountByDepartmentsalry);
 	
 	
 	
 	
-	
-	
-
-
-		
-		
+	 
 		
 	}
 	
