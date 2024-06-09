@@ -1,7 +1,9 @@
 - 👋 Hi, I’m @samseralimohammed
 Senior Java Fullstack Developer
+
+===================================
 About Me
-I am a Senior Java Fullstack Developer with over [X] years of professional experience in designing, developing, and maintaining scalable web applications. My expertise spans both frontend and backend development, ensuring the delivery of high-quality and performant solutions.
+I am a Senior Java Fullstack Developer with over 10 years of professional experience in designing, developing, and maintaining scalable web applications. My expertise spans both frontend and backend development, ensuring the delivery of high-quality and performant solutions.
 
 Hjdishjdiosajnxk aslkxmlas uninaksnkn
 
